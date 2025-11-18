@@ -1,0 +1,475 @@
+:root {
+  --cream: #fef9f5;
+  --soft-pink: #bb9457;
+  --muted: #f7efe9;
+  --accent: #6f4e37;
+  --text: #3b2b24;
+  --card: #fff;
+  --shadow: rgba(0, 0, 0, 0.08);
+  --panel-bg: #fbfbfb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: var(--cream);
+  color: var(--text);
+}
+
+/* Header / Nav */
+header {
+  background: var(--soft-pink);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px var(--shadow);
+}
+
+header h1 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 50px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+header p {
+  margin-top: 10px;
+  color: #fff;
+}
+
+nav {
+  background: var(--muted);
+  padding: 12px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  box-shadow: 0 1px 4px var(--shadow);
+}
+
+nav a {
+  color: var(--accent);
+  margin: 0 16px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 21px;
+}
+
+nav a:hover {
+  color: #2f1b15;
+}
+
+/* Layout */
+main {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 0 18px;
+}
+
+/* .hero {
+  padding: 36px 0;
+  text-align: center;
+  background: linear-gradient(to bottom, #fff7f8, var(--cream));
+} */
+/* Minimal & Elegant Hero Section */
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+  background: #f4ece7; /* soft cream background */
+  color: #4a3f3f; /* main text color - warm brown */
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Hero Heading */
+.hero h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #4a3f3f; /* warm brown accent */
+  margin-bottom: 16px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hero Paragraph */
+.hero p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #5a4037; /* slightly darker brown for readability */
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Optional subtle decorative line under heading */
+.hero h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #9d8189; /* brown accent */
+  margin: 14px auto 0 auto;
+  border-radius: 2px;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .hero h2 {
+    font-size: 32px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+}
+
+
+.section {
+  padding: 28px 0;
+}
+
+.section h2 {
+  font-size: 40px;
+  color: var(--accent);
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.lead {
+  color: #5b3e36;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Grid layout for patterns and tutorials */
+.patterns-grid,
+#tutorialsGrid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-top: 16px;
+}
+
+/* Pattern & Tutorial Cards */
+.pattern-card,
+.tutorial-card {
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: 0 8px 18px var(--shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform .15s;
+}
+
+.pattern-card:hover,
+.tutorial-card:hover {
+  transform: translateY(-6px);
+}
+
+.card-media {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+  background: #eee;
+}
+
+.card-body {
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 170px;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.card-desc {
+  font-size: 14px;
+  color: #5a4037;
+  margin-bottom: 12px;
+  flex: 0 0 auto;
+}
+
+/* Specific to Tutorials */
+.card-level {
+  font-size: 13px;
+  color: #8c5c49;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* Buttons */
+.btn-row {
+  display: flex;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.btn {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid #e9d8cf;
+  color: var(--accent);
+}
+
+/* Pattern details */
+.pattern-details {
+  padding: 12px 16px;
+  border-top: 1px solid #f1e7e3;
+  background: #fffefc;
+  display: none;
+}
+
+.pattern-details.visible {
+  display: block;
+}
+
+.pattern-details pre {
+  white-space: pre-wrap;
+  font-family: inherit;
+  font-size: 14px;
+  color: #3f2d27;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Yarn selector */
+.yarn-area {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.preview-box {
+  width: 320px;
+  height: 320px;
+  border-radius: 14px;
+  background: var(--panel-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.06);
+}
+
+.picker-col {
+  min-width: 220px;
+  max-width: 320px;
+}
+
+.palette-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.swatch {
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  user-select: none;
+  transition: transform .15s;
+}
+
+.swatch:hover {
+  transform: scale(1.05);
+}
+
+input[type=color] {
+  width: 70px;
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+/* Small screens */
+@media (max-width:720px) {
+  .preview-box {
+    width: 260px;
+    height: 260px;
+  }
+
+  .picker-col {
+    width: 100%;
+  }
+
+  #tutorialsGrid,
+  .patterns-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+/* Counter Section */
+#counterSection {
+  /* background: var(--muted); */
+  padding: 40px 0;
+  margin-top: 40px;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px var(--shadow);
+  text-align: center;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.counter-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  width: 230px;
+  box-shadow: 0 6px 14px var(--shadow);
+  text-align: center;
+}
+
+.counter-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.count {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 6px 0 14px 0;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 54px;
+}
+
+.counter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.counter-btn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.counter-btn:hover {
+  transform: scale(1.08);
+}
+
+.reset-btn {
+  margin-top: 12px;
+  padding: 8px 14px;
+  font-size: 14px;
+  background: none;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.reset-btn:hover {
+  background: var(--accent);
+  color: white;
+}
+
+/* Tip box (notification) */
+#tipBox {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: white;
+  padding: 14px 18px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  border: 2px solid #ffcae0;
+  color: #2b2b2b;
+  display: none;
+  max-width: 320px;
+  z-index: 9999;
+}
+
+#tipBox p {
+  margin: 0 0 12px 0;
+  font-size: 15px;
+  color: #4a2a3a;
+  text-align: left;
+}
+
+#closeTip {
+  background: #ff89b5;
+  color: white;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  display: block;
+  margin: 0 auto;
+}
+
+.star-effect {
+  position: fixed;
+  font-size: 26px;
+  animation: rise .8s ease-out forwards;
+  pointer-events: none;
+  z-index: 10000;
+}
+
+@keyframes rise {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+}

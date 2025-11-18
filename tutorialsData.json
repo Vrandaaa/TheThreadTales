@@ -1,0 +1,50 @@
+[
+    {
+        "item no": "Item 1",
+        "itemn": "Crochet Bunny",
+        "descrip": "A fluffy soft bunny that looks like it came straight out of a pastel fairytale!  \n           With long adorable ears and a tiny nose, this bunny is perfect for gifting or keeping as your cozy desk buddy.  \n",
+        "level": "Moderate",
+        "ytlink": "https://youtu.be/TlBMcexUwjE?si=mE4g8bSCtT6YcEZu",
+        "imgSrc": "images/bunny.JPG"
+    },
+    {
+        "item no": "Item 2",
+        "itemn": "Crochet Top",
+        "descrip": "A pretty handmade crochet top that gives a dreamy, girly aesthetic!  \nPerfect for summer, photoshoots, or styling with jeans for a cute look.  \nSoft, comfy, and totally Pinterest-worthy",
+        "level": "Hard",
+        "ytlink": "https://youtu.be/CoB8eNqalY8?si=BaJHkAW6woGWP3vK",
+        "imgSrc": "images/top.JPG"
+    },
+    {
+        "item no": "Item 3",
+        "itemn": "Crochet Duck",
+        "descrip": "A tiny chubby duck that instantly melts hearts!  \nCute, squishy, and perfect to hang on bags or keep as a sweet reminder of your creativity.  \nGuaranteed to make you smile every time",
+        "level": "Beginner",
+        "ytlink": "https://youtu.be/hGi0JudZAVY?si=oinMcp6xkwFQmeDS",
+        "imgSrc": "images/keychain.JPG"
+    },
+    {
+        "item no": "Item 4",
+        "itemn": "Crochet Roses",
+        "descrip": "Beautiful handcrafted roses that never fade!  \nPerfect for room décor, gifts, or adding a romantic touch to your desk.  \nSoft petals + pastel charm = pure elegance",
+        "level": "Moderate",
+        "ytlink": "https://youtu.be/HC21Ku4hFsI?si=IM37Bg1Nf4osp37Y",
+        "imgSrc": "images/rose.JPG"
+    },
+    {
+        "item no": "Item 5",
+        "itemn": "Crochet Bag",
+        "descrip": "A stylish handmade bag with cottagecore vibes!  \nSpacious, adorable, and perfect for carrying small essentials.  \nLooks cute with every outfit — a must-have accessory",
+        "level": "Hard",
+        "ytlink": "https://youtu.be/Um82jehMQKY?si=DomcdWdztLCstFvs",
+        "imgSrc": "images/bag.JPG"
+    },
+    {
+        "item no": "Item 6",
+        "itemn": "Crochet Bookmark",
+        "descrip": "A cute and classy bookmark made for book lovers!  \nSoft, aesthetic, and perfect for adding magic to your reading time.  \nMakes your books feel even more special",
+        "level": "Beginner",
+        "ytlink": "https://youtu.be/B8LSYqEvw58?si=BSQbIbOcVriLtGbB",
+        "imgSrc": "images/bookmark.JPG"
+    }
+]

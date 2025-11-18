@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>The Thread Tales — demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Original uploaded doc (for your reference / internal tooling): /mnt/data/code.docx -->
+</head>
+
+<body>
+    <header>
+        <h1>The Thread Tales</h1>
+        <p>Your cozy place for crochet patterns & yarn magic ✨</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#patterns">Patterns</a>
+        <a href="#yarnSelector">Yarn Selector</a>
+        <a href="#tutorials">Tutorials</a>
+        <a href="#counterSection">Counter</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <h2>Welcome to The Thread Tales!</h2>
+            <p>Explore beautiful crochet designs, step-by-step tutorials, and magical patterns.</p>
+        </section>
+
+        <!-- Patterns Section -->
+        <section id="patterns" class="section">
+            <h2>Patterns</h2>
+            <p class="lead">Click <strong>Show pattern</strong> to reveal the written steps. 
+            </p>
+
+            <div id="patternsGrid" class="patterns-grid" aria-live="polite">
+                <!-- JS will populate -->
+            </div>
+        </section>
+        <hr>
+        <!-- Yarn Selector -->
+        <section id="yarnSelector" class="section">
+            <h2>Customize Your Yarn</h2>
+            <p class="lead">Pick a color or use a preset to preview the yarn ball.</p>
+
+            <div class="yarn-area">
+                <div class="preview-box" id="previewContainer" aria-live="polite" role="img" aria-label="Yarn preview">
+                </div>
+
+                <div class="picker-col">
+                    <div style="display:flex;align-items:center;gap:12px;">
+                        <strong>Pick color</strong>
+                        <input type="color" id="colorPicker" value="#676767" aria-label="Pick yarn color">
+                    </div>
+
+                    <div class="palette-grid" id="paletteContainer" aria-label="Suggested palettes"
+                        style="margin-top:12px">
+                        <!-- swatches injected -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- Tutorials Section -->
+        <section id="tutorials" class="section">
+
+            
+
+            <h2>Video Tutorials</h2>
+            <p class="lead">Click <strong>Watch Tutorial</strong> to view the video on YouTube.</p>
+            <div style="margin-bottom: 16px;">
+                <label for="levelFilter"><strong>Filter by level:</strong></label>
+                <select id="levelFilter">
+                    <option value="all">All</option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Moderate">Intermediate</option>
+                    <option value="Hard">Advanced</option>
+                </select>
+            </div>
+            <div id="tutorialsGrid" class="patterns-grid" aria-live="polite">
+                <!-- JS will populate tutorial cards here -->
+            </div>
+        </section>
+        <hr>
+        <!-- Counter Section -->
+        <section id="counterSection" class="section">
+            <h2>Row & Stitch Counter</h2>
+
+            <!-- Tip (notification) -->
+            <div id="tipBox" role="status" aria-live="polite">
+                <p id="tipText"></p>
+                <button id="closeTip">OK</button>
+            </div>
+
+            <div class="counter-container">
+                <!-- ROW BOX -->
+                <div class="counter-box">
+                    <div class="counter-title">Rows</div>
+                    <div id="rowCount" class="count">0</div>
+                    <div class="counter-buttons">
+                        <button class="counter-btn" onclick="updateCount('rows', -1)">−</button>
+                        <button class="counter-btn" onclick="updateCount('rows', 1)">+</button>
+                    </div>
+                    <button class="reset-btn" onclick="resetCount('rows')">Reset</button>
+                </div>
+
+                <!-- STITCH BOX -->
+                <div class="counter-box">
+                    <div class="counter-title">Stitches</div>
+                    <div id="stitchCount" class="count">0</div>
+                    <div class="counter-buttons">
+                        <button class="counter-btn" onclick="updateCount('stitches', -1)">−</button>
+                        <button class="counter-btn" onclick="updateCount('stitches', 1)">+</button>
+                    </div>
+                    <button class="reset-btn" onclick="resetCount('stitches')">Reset</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer style="background:var(--soft-pink); padding:18px; text-align:center; margin-top:30px;">
+        <p>© 2025 The Thread Tales. All Rights Reserved.</p>
+    </footer>
+
+    <!-- External JS file (Part 2) -->
+    <script src="threadtales-counter-tip.js"></script>
+    <!-- Note: If you prefer a specific path, place the JS at that path and update the src above. -->
+</body>
+
+<script src="script.js"></script>
+
+</html>

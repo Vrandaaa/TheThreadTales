@@ -1,0 +1,127 @@
+{
+  "cushion": {
+    "abbreviations": {
+      "ch": "chain",
+      "sc": "single crochet",
+      "hdc": "half double crochet",
+      "dc": "double crochet",
+      "ss": "slip stitch"
+    },
+
+    "notes": [
+      "Steps for ending each round and attaching a new color (ss + ch 1) are explained in the YouTube tutorial.",
+      "Highly recommended to watch the full video to understand how the pattern is worked.",
+      "There are no mistakes in this pattern; read instructions carefully."
+    ],
+
+    "rounds": {
+      "1": "Slipknot, ch 8, dc into 3rd ch from hook, 1 dc, 3 dc x 2, 1 dc, 4 dc, work on other side of ch, in same stitch as previous 4 dc – 3 dc (total 7 dc), dc 4, 6 dc, end round and attach next color (ss + ch 1).",
+      "2": "2 hdc in same stitch as ss, 1 hdc x 4, 3 dc, 1 hdc x 4, 2 hdc x 2, 3 hdc x 2, 2 hdc, 1 sc, sc 2 together, 1 sc, 2 hdc, 3 hdc x 2, 2 hdc, end round and attach next color.",
+      "3": "1 hdc x 7, 2 dc x 2, 1 hdc x 8, 2 hdc x 6, 1 sc x 2, sc 4 together, 1 sc x 2, 2 hdc x 6, 1 hdc, end and attach next color.",
+      "4": "1 hdc x 9, 3 dc, 1 hdc x 12, (2 hdc, 1 hdc) x 4, 2 sc, 1 sc x 2, sc 2 together, 1 sc x 2, 2 sc, (1 hdc, 2 hdc) x 4, 1 hdc x 3, end and attach new color.",
+      "5": "1 hdc x 10, 2 dc x 2, 1 hdc x 13, (2 hdc, 1 hdc x 2) x 4, 2 sc, 1 sc, sc 4 together, 1 sc, 2 sc, (1 hdc x 2, 2 hdc) x 4, 1 hdc x 3.",
+      "6": "1 hdc x 12, 3 dc, 1 hdc x 15, (2 hdc, 1 hdc x 3) x 4, 2 sc, sc x 2, sc 2 together, sc x 2, 2 sc, (1 hdc x 3, 2 hdc) x 4, 1 hdc.",
+      "7": "1 hdc x 13, 2 dc x 2, 1 hdc x 13, (2 hdc, 1 hdc x 4) x 4, 2 sc, sc x 2, sc 4 together, sc x 2, 2 sc, (1 hdc x 4, 2 hdc) x 4, 1 hdc x 2.",
+      "8": "1 hdc x 15, 3 dc, 1 hdc x 16, (2 hdc, 1 hdc x 5) x 4, 2 sc, sc x 2, sc 2 together, sc x 2, 2 sc, (1 hdc x 5, 2 hdc) x 4, 1 hdc.",
+      "9": "1 hdc x 16, 2 dc x 2, 1 hdc x 17, (2 hdc, 1 hdc x 6) x 4, 2 sc, sc x 2, sc 2 together, sc x 2, 2 sc, (1 hdc x 6, 2 hdc) x 4, 1 hdc.",
+      "10": "1 hdc x 18, 3 dc, 1 hdc x 19, (2 hdc, 1 hdc x 7) x 4, 2 sc, sc x 2, sc 2 together, sc x 2, 2 sc, (1 hdc x 7, 2 hdc) x 4, 1 hdc.",
+      "11": "1 hdc x 19, 2 dc x 2, 1 hdc x 20, (2 hdc, 1 hdc x 8) x 4, 2 sc, sc x 2, sc 2 together, sc x 2, 2 sc, (1 hdc x 8, 2 hdc) x 4, 1 hdc.",
+      "12": "1 hdc x 21, 3 dc, 1 hdc x 22, (2 hdc, 1 hdc x 9) x 4, 2 sc, sc x 2, sc 2 together, sc x 2, 2 sc, (1 hdc x 9, 2 hdc) x 4, 1 hdc."
+    },
+
+    "instructions_after_round_12": "You may continue increasing rounds similarly to make it bigger."
+  },
+
+  "plushie": {
+    "abbreviations": {
+      "ss": "slip stitch",
+      "sc": "single crochet",
+      "fake_magic_ring": "slip knot, ch 3, ss in 1st ch, ch 1, work stitches in circle "
+    },
+
+    "head": {
+      "1": "6 sc",
+      "2": "2 sc in each stitch (12)",
+      "3": "1 sc, increase (18)",
+      "4": "1 sc in each stitch (18)",
+      "5": "1 sc in each stitch (18)",
+      "6": "1 sc in each stitch (18)",
+      "7": "1 sc, decrease (12)",
+      "8": "6 decreases"
+    },
+
+    "legs": {
+      "1": "5 dc",
+      "2": "1 sc each stitch (5)",
+      "3": "1 sc each stitch (5)",
+      "join": "ss & fasten off first leg, repeat second, ss to join (10 stitches total)"
+    },
+
+    "body": {
+      "1": "1 sc, increase (14)",
+      "2": "1 sc in each stitch (14)",
+      "3": "1 sc in each stitch (14)",
+      "4": "1 sc, decrease (10)",
+      "5": "1 sc in each stitch (10)",
+      "6": "5 decreases"
+    },
+
+    "ears": {
+      "1": "6 sc",
+      "2": "1 sc each stitch (6)",
+      "3": "1 sc each stitch (6)",
+      "4": "1 sc each stitch (6)",
+      "finish": "3 sc through top of ears"
+    },
+
+    "hands": {
+      "1": "5 sc",
+      "2": "1 sc each stitch (5)",
+      "3": "1 sc each stitch (5)",
+      "4": "1 sc each stitch (5)",
+      "finish": "2 sc through top of hands"
+    }
+  },
+
+  "mesh_top": {
+    "back_panel": {
+      "width": "15 inches",
+      "length": "13–14 inches",
+      "starting_chains": 57,
+      "mesh_stitches_per_row": 19,
+      "rows": 34
+    },
+
+    "shoulder_section": {
+      "width": "4 inches",
+      "length": "4.5 inches",
+      "mesh_stitches_per_row": 5,
+      "rows": 9
+    },
+
+    "front_panel": {
+      "rows": [
+        "Row 1: increase, ch 5, sc in chsp (6 mesh)",
+        "Rows 2–6: repeat (6 mesh)",
+        "Row 7: increase (7 mesh)",
+        "Rows 8–12: repeat",
+        "Row 13: increase (8 mesh)",
+        "Rows 14–18: repeat",
+        "Row 19: increase (9 mesh)",
+        "Rows 20–24: repeat",
+        "Row 25: increase (10 mesh)",
+        "Rows 26–32: repeat",
+        "Row 33: chain 135 → sc in 9th ch → repeat mesh pattern → join to panel",
+        "Row 34: ch 5, sc in all chsp including ties"
+      ]
+    },
+
+    "sleeves": {
+      "width": "6 inches",
+      "length": "5 inches",
+      "mesh_stitches_per_round": 14,
+      "rounds": 9,
+      "note": "Sew front & back panels first, leave armhole space."
+    }
+  }
+}
