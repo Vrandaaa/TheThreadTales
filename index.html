@@ -21,6 +21,7 @@
         <a href="#yarnSelector">Yarn Selector</a>
         <a href="#tutorials">Tutorials</a>
         <a href="#counterSection">Counter</a>
+        <a href="#feedback">Feedback</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -119,6 +120,240 @@
                 </div>
             </div>
         </section>
+        <!-- Add this section to your index.html, right before the </main> closing tag -->
+
+<hr>
+<!-- Feedback Section -->
+<section id="feedback" class="section">
+    <h2>Community Feedback</h2>
+    <p class="lead">See what our crafters are saying and share your own experience! ✨</p>
+
+    <!-- Feedback Grid -->
+    <div id="feedbackGrid" class="patterns-grid" aria-live="polite">
+        <!-- JS will populate existing feedback cards here -->
+    </div>
+
+    <!-- Add New Feedback Form -->
+    <div class="feedback-form-container">
+        <h3>Share Your Feedback</h3>
+        <form id="feedbackForm" class="feedback-form">
+            <div class="form-group">
+                <label for="feedbackName">Your Name</label>
+                <input 
+                    type="text" 
+                    id="feedbackName" 
+                    name="name" 
+                    placeholder="Enter your name" 
+                    required
+                    maxlength="50"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="feedbackRating">Rating</label>
+                <div class="star-rating" id="starRating" role="radiogroup" aria-label="Rating">
+                    <span class="star" data-rating="1" role="radio" aria-checked="false" tabindex="0">★</span>
+                    <span class="star" data-rating="2" role="radio" aria-checked="false" tabindex="0">★</span>
+                    <span class="star" data-rating="3" role="radio" aria-checked="false" tabindex="0">★</span>
+                    <span class="star" data-rating="4" role="radio" aria-checked="false" tabindex="0">★</span>
+                    <span class="star" data-rating="5" role="radio" aria-checked="false" tabindex="0">★</span>
+                </div>
+                <input type="hidden" id="feedbackRating" name="rating" required>
+            </div>
+
+            <div class="form-group">
+                <label for="feedbackMessage">Your Feedback</label>
+                <textarea 
+                    id="feedbackMessage" 
+                    name="message" 
+                    rows="5" 
+                    placeholder="Share your thoughts, suggestions, or experiences..."
+                    required
+                    maxlength="500"
+                ></textarea>
+                <small class="char-count"><span id="charCount">0</span>/500 characters</small>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit Feedback</button>
+        </form>
+    </div>
+</section>
+<!-- Add this section to your index.html, after the feedback section and before </main> -->
+
+<hr>
+<!-- Contact Section -->
+<section id="contact" class="section">
+    <h2>Get In Touch</h2>
+    <p class="lead">Have questions, custom requests, or just want to say hello? We'd love to hear from you! 💌</p>
+
+    <div class="contact-wrapper">
+        <!-- Contact Info Cards -->
+        <div class="contact-info">
+            <div class="info-card">
+                <div class="info-icon">📧</div>
+                <div class="info-content">
+                    <h3>Email Us</h3>
+                    <a href="mailto:hello@threadtales.com">hello@threadtales.com</a>
+                    <p>We'll respond within 24-48 hours</p>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <div class="info-icon">💬</div>
+                <div class="info-content">
+                    <h3>Social Media</h3>
+                    <div class="social-links">
+                        <a href="#" target="_blank" aria-label="Instagram">Instagram</a>
+                        <a href="#" target="_blank" aria-label="Pinterest">Pinterest</a>
+                        <a href="#" target="_blank" aria-label="YouTube">YouTube</a>
+                    </div>
+                    <p>Follow us for daily inspiration</p>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <div class="info-icon">🕐</div>
+                <div class="info-content">
+                    <h3>Response Time</h3>
+                    <p><strong>Monday - Friday:</strong> 9AM - 6PM EST</p>
+                    <p><strong>Weekend:</strong> Limited availability</p>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <div class="info-icon">🎨</div>
+                <div class="info-content">
+                    <h3>Custom Requests</h3>
+                    <p>Looking for a specific pattern? Let us know and we'll do our best to create it for you!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+            <h3>Send Us a Message</h3>
+            
+            <div id="contactSuccessMessage" class="success-message" role="alert">
+                ✨ Message sent successfully! We'll get back to you soon.
+            </div>
+
+            <form id="contactForm" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contactName">Name *</label>
+                        <input 
+                            type="text" 
+                            id="contactName" 
+                            name="name" 
+                            placeholder="Your name" 
+                            required
+                            maxlength="50"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactEmail">Email *</label>
+                        <input 
+                            type="email" 
+                            id="contactEmail" 
+                            name="email" 
+                            placeholder="your@email.com" 
+                            required
+                        >
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactSubject">Subject *</label>
+                    <select id="contactSubject" name="subject" required>
+                        <option value="">Choose a subject...</option>
+                        <option value="pattern-question">Pattern Question</option>
+                        <option value="custom-request">Custom Pattern Request</option>
+                        <option value="technical-issue">Technical Issue</option>
+                        <option value="collaboration">Collaboration Inquiry</option>
+                        <option value="feedback">General Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactMessage">Message *</label>
+                    <textarea 
+                        id="contactMessage" 
+                        name="message" 
+                        rows="6" 
+                        placeholder="Tell us what's on your mind..."
+                        required
+                        maxlength="1000"
+                    ></textarea>
+                    <small class="char-count"><span id="contactCharCount">0</span>/1000 characters</small>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="contactNewsletter" name="newsletter">
+                        <span>Yes, I'd like to receive pattern updates and crochet tips via email</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large">
+                    <span class="btn-text">Send Message</span>
+                    <span class="btn-icon">📤</span>
+                </button>
+            </form>
+
+            <p class="form-note">
+                <small>* Required fields. We respect your privacy and will never share your information.</small>
+            </p>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq-section">
+        <h3>Frequently Asked Questions</h3>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                    <span>How do I access pattern PDFs?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>All patterns are available directly on our website. Simply click "Show pattern" on any pattern card to view the full instructions. You can also copy them for offline use!</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                    <span>Can I sell items made from your patterns?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes! You're welcome to sell finished items made from our free patterns. We only ask that you credit Thread Tales and don't redistribute the patterns themselves.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                    <span>Do you take custom pattern requests?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Absolutely! We love creating custom patterns. Use the contact form above and select "Custom Pattern Request" - tell us your idea and we'll work with you to bring it to life.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                    <span>What if I'm stuck on a pattern?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Don't worry! Check our video tutorials first. If you're still stuck, send us a message with your question and include which pattern you're working on. We're here to help!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     </main>
     
     <footer style="background:var(--soft-pink); padding:18px; text-align:center; margin-top:30px;">
